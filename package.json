@@ -19,10 +19,10 @@
     "commander": "^14.0.0",
     "fs-extra": "^11.3.0",
     "snarkjs": "^0.7.5",
-    "solc": "^0.8.29",
     "web3": "^4.16.0"
   },
   "devDependencies": {
-    "@parity/revive": "^0.0.21"
+    "@parity/revive": "^0.0.21",
+    "solc": "^0.8.29"
   }
 }
