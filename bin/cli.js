@@ -4,6 +4,7 @@ const { program } = require('commander');
 const { compileCircuit } = require('../lib/compile');
 const { testCircuit } = require('../lib/test');
 const { deployVerifier } = require('../lib/deploy');
+const { verifyProof } = require('../lib/verify');
 
 program
   .command('compile <circomFilePath>')
@@ -26,4 +27,8 @@ program
     deployVerifier(folder, privateKey);
   });
 
-  program.parse(process.argv);
+program.parse(process.argv);
+
+   module.exports = {
+  verifyProof
+};    

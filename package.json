@@ -1,16 +1,16 @@
 {
-  "name": "zk-polka-verifier",
+  "name": "zk-polka-sdk",
+  "version": "1.0.0",
+  "description": "A zero-knowledge proof SDK for compiling Circom circuits and deploying Solidity verifiers to PolkaVM.",
+  "main": "./bin/index.js",
   "bin": {
     "zk-polka-sdk": "./bin/cli.js"
   },
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["zk", "circom", "snarkjs", "polkavm", "solidity", "zkp"],
+  "author": "Jatin Sahijwani",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
@@ -19,10 +19,16 @@
     "commander": "^14.0.0",
     "fs-extra": "^11.3.0",
     "snarkjs": "^0.7.5",
-    "web3": "^4.16.0"
+    "web3": "^4.16.0",
+    "solc": "^0.8.29",
+    "@parity/revive": "^0.0.21"
   },
-  "devDependencies": {
-    "@parity/revive": "^0.0.21",
-    "solc": "^0.8.29"
-  }
+  "files": [
+    "bin",
+    "lib",
+    "circomlib",
+    "ptau",
+    "pot12_0000.ptau",
+    "pot12_0001.ptau"
+  ]
 }
